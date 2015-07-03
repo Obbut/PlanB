@@ -19,12 +19,25 @@
 
 // Core library for code-sense - IDE-based
 #include "Arduino.h"
+#include <sstream>
+#include <iterator>
+#include <vector>
+#include "Utils.h"
+
+using namespace std;
 
 void setup() {
-    
+    Serial.begin(9600);
 }
 
 
 void loop() {
+    vector<string> stuff = stringSplit("henk/test/jemoeder", '/');
     
+    for (string henk : stuff) {
+        Serial.print("Stuff is ");
+        Serial.println(henk.c_str());
+    }
+    
+    delay(1000);
 }
