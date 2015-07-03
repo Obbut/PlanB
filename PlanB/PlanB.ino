@@ -21,19 +21,10 @@
 #include "Arduino.h"
 
 void setup() {
-
-    pinMode(13, OUTPUT);
+    
 }
 
-//
-// Brief	Loop
-// Details	Blink the LED
-//
-// Add loop code
+
 void loop() {
-    digitalWrite(13, HIGH);
-    delay(100);
-    digitalWrite(13, LOW);
-    delay(100);
-    Serial.println("Hoi");
+    
 }

@@ -148,7 +148,7 @@ EXTRA_LDFLAGS  += -Wl,--warn-unresolved-symbols
 LDFLAGS         = -$(MCU_FLAG_NAME)=$(MCU) -lm -Wl,--gc-sections,-u,main $(OPTIMISATION) $(EXTRA_LDFLAGS)
 
 EXTRA_CPPFLAGS  = -I$(VARIANT_PATH) $(addprefix -D, $(PLATFORM_TAG)) -D__SAM3X8E__ -mthumb -fno-rtti
-EXTRA_CPPFLAGS += -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf $(SYSTEM_FLAGS)
+EXTRA_CPPFLAGS += -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf $(SYSTEM_FLAGS) -std=gnu++11
 
 OBJCOPYFLAGS  = -v -Obinary 
 TARGET_HEXBIN = $(TARGET_BIN)
