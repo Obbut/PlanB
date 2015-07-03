@@ -22,8 +22,8 @@ BOARD_TAG  = arduino_due_x
 // most common are /dev/tty.usbserial*, /dev/tty.usbmodem* or /dev/tty.uart*
 // Note: if /dev/tty.usbserial* doesn't work, try /dev/tty.usbmodem*
 //
-BOARD_PORT = /dev/tty.usbserial*
-//BOARD_PORT = /dev/tty.usbmodem*
+//BOARD_PORT = /dev/tty.usbserial*
+BOARD_PORT = /dev/tty.usbmodem*
 
 // Warning: some users have reported /dev/cu.usb*
 
