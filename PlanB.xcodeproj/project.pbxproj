@@ -413,6 +413,8 @@
 		F21DE5B31B47531D0051809F /* URLHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21DE5B11B47531D0051809F /* URLHandler.cpp */; };
 		F225BF001B4742B300B672AE /* LocalLibrary.h in Sources */ = {isa = PBXBuildFile; fileRef = F245BF001B4742B300B672AE /* LocalLibrary.h */; };
 		F225BF701B4742B300B672AE /* PlanB.ino in Sources */ = {isa = PBXBuildFile; fileRef = F245BF701B4742B300B672AE /* PlanB.ino */; };
+		F23B2F521B47ECDC008F227D /* NewRemoteReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F23B2F4E1B47ECDC008F227D /* NewRemoteReceiver.cpp */; };
+		F23B2F531B47ECDC008F227D /* NewRemoteTransmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F23B2F501B47ECDC008F227D /* NewRemoteTransmitter.cpp */; };
 		F245BEFA1B4742B300B672AE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F245BEF91B4742B300B672AE /* main.cpp */; };
 		F245BEFF1B4742B300B672AE /* LocalLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F245BEFE1B4742B300B672AE /* LocalLibrary.cpp */; };
 /* End PBXBuildFile section */
@@ -826,6 +828,10 @@
 		F21DE5B21B47531D0051809F /* URLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLHandler.h; sourceTree = "<group>"; };
 		F23B2F4B1B47D6BB008F227D /* boost */ = {isa = PBXFileReference; lastKnownFileType = folder; path = boost; sourceTree = "<group>"; };
 		F23B2F4C1B47E5CD008F227D /* Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		F23B2F4E1B47ECDC008F227D /* NewRemoteReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NewRemoteReceiver.cpp; sourceTree = "<group>"; };
+		F23B2F4F1B47ECDC008F227D /* NewRemoteReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRemoteReceiver.h; sourceTree = "<group>"; };
+		F23B2F501B47ECDC008F227D /* NewRemoteTransmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NewRemoteTransmitter.cpp; sourceTree = "<group>"; };
+		F23B2F511B47ECDC008F227D /* NewRemoteTransmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRemoteTransmitter.h; sourceTree = "<group>"; };
 		F245BEF61B4742B300B672AE /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Index; sourceTree = BUILT_PRODUCTS_DIR; };
 		F245BEF91B4742B300B672AE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F245BEFB1B4742B300B672AE /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -2081,6 +2087,17 @@
 			path = FLASHC;
 			sourceTree = "<group>";
 		};
+		F23B2F4D1B47ECC7008F227D /* NewRemoteSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				F23B2F4E1B47ECDC008F227D /* NewRemoteReceiver.cpp */,
+				F23B2F4F1B47ECDC008F227D /* NewRemoteReceiver.h */,
+				F23B2F501B47ECDC008F227D /* NewRemoteTransmitter.cpp */,
+				F23B2F511B47ECDC008F227D /* NewRemoteTransmitter.h */,
+			);
+			name = NewRemoteSwitch;
+			sourceTree = "<group>";
+		};
 		F245BEEA1B4742B300B672AE = {
 			isa = PBXGroup;
 			children = (
@@ -2100,6 +2117,7 @@
 		F245BEF81B4742B300B672AE /* PlanB */ = {
 			isa = PBXGroup;
 			children = (
+				F23B2F4D1B47ECC7008F227D /* NewRemoteSwitch */,
 				F23B2F4B1B47D6BB008F227D /* boost */,
 				F245BEF91B4742B300B672AE /* main.cpp */,
 				F245BEFB1B4742B300B672AE /* Makefile */,
@@ -2706,6 +2724,7 @@
 				AA2A150704002923AA00015E /* lineFollow.cpp in Sources */,
 				AA2A150704002923AA00015F /* LineFollow.h in Sources */,
 				AA2A150704002923AA000160 /* Multiplexer.cpp in Sources */,
+				F23B2F521B47ECDC008F227D /* NewRemoteReceiver.cpp in Sources */,
 				AA2A150704002923AA000161 /* Multiplexer.h in Sources */,
 				AA2A150704002923AA000165 /* IRremote.cpp in Sources */,
 				AA2A150704002923AA000166 /* IRremote.h in Sources */,
@@ -2742,6 +2761,7 @@
 				AA2A150704002923AA000196 /* BaseFormatter.h in Sources */,
 				AA2A150704002923AA000197 /* ChoreoInput.cpp in Sources */,
 				AA2A150704002923AA000198 /* ChoreoInput.h in Sources */,
+				F23B2F531B47ECDC008F227D /* NewRemoteTransmitter.cpp in Sources */,
 				AA2A150704002923AA000199 /* ChoreoInputFormatter.cpp in Sources */,
 				AA2A150704002923AA00019A /* ChoreoInputFormatter.h in Sources */,
 				AA2A150704002923AA00019B /* ChoreoInputSet.cpp in Sources */,
