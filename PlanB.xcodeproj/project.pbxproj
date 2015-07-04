@@ -410,6 +410,7 @@
 		AA2A150704002923AA0001FA /* at45dbx_mem.h in Sources */ = {isa = PBXBuildFile; fileRef = AAAA150704002923AA0001FA /* at45dbx_mem.h */; };
 		AA2A150704002923AA0001FD /* flashc.c in Sources */ = {isa = PBXBuildFile; fileRef = AAAA150704002923AA0001FD /* flashc.c */; };
 		F21DE5B01B474D420051809F /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21DE5AE1B474D420051809F /* Utils.cpp */; };
+		F21DE5B31B47531D0051809F /* URLHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21DE5B11B47531D0051809F /* URLHandler.cpp */; };
 		F225BF001B4742B300B672AE /* LocalLibrary.h in Sources */ = {isa = PBXBuildFile; fileRef = F245BF001B4742B300B672AE /* LocalLibrary.h */; };
 		F225BF701B4742B300B672AE /* PlanB.ino in Sources */ = {isa = PBXBuildFile; fileRef = F245BF701B4742B300B672AE /* PlanB.ino */; };
 		F245BEFA1B4742B300B672AE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F245BEF91B4742B300B672AE /* main.cpp */; };
@@ -821,6 +822,10 @@
 		AAAA150704002923AA0001FD /* flashc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = flashc.c; sourceTree = "<group>"; };
 		F21DE5AE1B474D420051809F /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
 		F21DE5AF1B474D420051809F /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		F21DE5B11B47531D0051809F /* URLHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = URLHandler.cpp; sourceTree = "<group>"; };
+		F21DE5B21B47531D0051809F /* URLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLHandler.h; sourceTree = "<group>"; };
+		F23B2F4B1B47D6BB008F227D /* boost */ = {isa = PBXFileReference; lastKnownFileType = folder; path = boost; sourceTree = "<group>"; };
+		F23B2F4C1B47E5CD008F227D /* Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
 		F245BEF61B4742B300B672AE /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Index; sourceTree = BUILT_PRODUCTS_DIR; };
 		F245BEF91B4742B300B672AE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F245BEFB1B4742B300B672AE /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -2095,6 +2100,7 @@
 		F245BEF81B4742B300B672AE /* PlanB */ = {
 			isa = PBXGroup;
 			children = (
+				F23B2F4B1B47D6BB008F227D /* boost */,
 				F245BEF91B4742B300B672AE /* main.cpp */,
 				F245BEFB1B4742B300B672AE /* Makefile */,
 				F245BEFD1B4742B300B672AE /* ReadMe.txt */,
@@ -2109,6 +2115,9 @@
 				F245BF681B4742B300B672AE /* Utilities */,
 				F21DE5AE1B474D420051809F /* Utils.cpp */,
 				F21DE5AF1B474D420051809F /* Utils.h */,
+				F21DE5B11B47531D0051809F /* URLHandler.cpp */,
+				F21DE5B21B47531D0051809F /* URLHandler.h */,
+				F23B2F4C1B47E5CD008F227D /* Prefix.h */,
 			);
 			path = PlanB;
 			sourceTree = "<group>";
@@ -2584,6 +2593,7 @@
 				AA2A150704002923AA0000E7 /* GSM3MobileAccessProvider.cpp in Sources */,
 				AA2A150704002923AA0000E8 /* GSM3MobileAccessProvider.h in Sources */,
 				AA2A150704002923AA0000E9 /* GSM3MobileCellManagement.cpp in Sources */,
+				F21DE5B31B47531D0051809F /* URLHandler.cpp in Sources */,
 				AA2A150704002923AA0000EA /* GSM3MobileCellManagement.h in Sources */,
 				AA2A150704002923AA0000EB /* GSM3MobileClientProvider.cpp in Sources */,
 				AA2A150704002923AA0000EC /* GSM3MobileClientProvider.h in Sources */,

@@ -138,6 +138,7 @@ SYSTEM_FLAGS    = -I$(APPLICATION_PATH)/hardware/arduino/sam/system/libsam
 SYSTEM_FLAGS   += -I$(APPLICATION_PATH)/hardware/arduino/sam/system/libsam/include
 SYSTEM_FLAGS   += -I$(APPLICATION_PATH)/hardware/arduino/sam/system/CMSIS/CMSIS/Include/
 SYSTEM_FLAGS   += -I$(APPLICATION_PATH)/hardware/arduino/sam/system/CMSIS/Device/ATMEL/
+SYSTEM_FLAGS   += -I/Users/robbert/Desktop/PlanB/PlanB
 
 MCU_FLAG_NAME   = mcpu
 EXTRA_LDFLAGS   = -T$(VARIANT_PATH)/$(LDSCRIPT) -Wl,-Map,Builds/embeddedcomputing.map $(VARIANT_OBJS)
@@ -148,7 +149,8 @@ EXTRA_LDFLAGS  += -Wl,--warn-unresolved-symbols
 LDFLAGS         = -$(MCU_FLAG_NAME)=$(MCU) -lm -Wl,--gc-sections,-u,main $(OPTIMISATION) $(EXTRA_LDFLAGS)
 
 EXTRA_CPPFLAGS  = -I$(VARIANT_PATH) $(addprefix -D, $(PLATFORM_TAG)) -D__SAM3X8E__ -mthumb -fno-rtti
-EXTRA_CPPFLAGS += -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf $(SYSTEM_FLAGS) -std=gnu++11
+EXTRA_CPPFLAGS += -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf $(SYSTEM_FLAGS)
+EXTRA_CPPFLAGS += -std=gnu++11
 
 OBJCOPYFLAGS  = -v -Obinary 
 TARGET_HEXBIN = $(TARGET_BIN)

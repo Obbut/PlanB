@@ -19,8 +19,6 @@
 
 // Core library for code-sense - IDE-based
 #include "Arduino.h"
-#include <sstream>
-#include <iterator>
 #include <vector>
 #include "Utils.h"
 
@@ -32,6 +30,8 @@ void setup() {
 
 
 void loop() {
+    Serial.readString();
+    
     vector<string> stuff = stringSplit("henk/test/jemoeder", '/');
     
     for (string henk : stuff) {
